@@ -12,13 +12,13 @@ class Person
   def can_use_services?
     of_age? || @parent_permission
   end
-
+  Private
   def of_age?
     @age >= 18
   end
 end
 
-person1 = Person.new(13, name: 'jex', parent_permission: false)
+person1 = Person.new(25, name: 'jex', parent_permission: false)
 puts person1.name
 puts person1.age
 puts person1.id

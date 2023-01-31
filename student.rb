@@ -12,7 +12,7 @@ class Student < Person
   end
 end
 
-student1 = Student.new(13, name: 'Petesz', parent_permission: false, classroom: 'Math')
+student1 = Student.new(25, name: 'Petesz', parent_permission: false, classroom: 'Math')
 puts student1.name
 puts student1.age
 puts student1.can_use_services?
