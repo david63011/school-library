@@ -90,13 +90,13 @@ sudo apt-get install postgresql postgresql-contrib
 Clone this repository to your desired folder:
 
 cd my-folder
-git clone git@github.com:David63011/vet-clinic-database.git
+git clone github.com/david63011/school-library.git
 
 ### Install
 
 Install this project with:
 
-cd vet-clinic-database
+cd oop
 
 ### Usage
 
@@ -131,7 +131,7 @@ not available
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **More data of the animals**
+- [ ] **Add more classes**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
