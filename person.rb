@@ -13,7 +13,7 @@ class Person
     is_of_age || @parent_permission
   end
 
-  def is_of_age
+  def of_age?
     @age >= 18
   end
 end
