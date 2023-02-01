@@ -1,5 +1,5 @@
 class Classroom
-  attr_accessor :label, :students # creates setter and getter
+  attr_accessor :label, :students 
 
   def initialize(label)
     @label = label
