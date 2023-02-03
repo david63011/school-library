@@ -11,7 +11,7 @@ def main # rubocop:disable Metrics/AbcSize, Metrics/MethodLength, Metrics/Cyclom
     puts '3 - Create a person'
     puts '4 - Create a book'
     puts '5 - Create a rental'
-    puts '6 - List all rentals for a given person id'
+    puts '6 - List all rentals for a persons id'
     puts '7 - Exit'
     puts
     print 'Enter your choice'
