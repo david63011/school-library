@@ -1,8 +1,8 @@
 require_relative 'app'
 
-def main # rubocop:disable Metrics/AbcSize, Metrics/MethodLength, Metrics/CyclomaticComplexity, Metrics/BlockLength
+def main # rubocop:disable Metrics/AbcSize, Metrics/MethodLength, Metrics/CyclomaticComplexity
   app = App.new
-  loop do
+  loop do # rubocop:disable Metrics/BlockLength
     puts 'Welcome to School Library App!'
     puts
     puts 'Please choose an option by entering a number:'
