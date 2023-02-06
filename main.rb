@@ -17,7 +17,7 @@ class All
         puts 'Thank you for using this app!'
         break
       else
-          @choice.choice(userinput)
+        @choice.choice(userinput)
       end
     end
   end
