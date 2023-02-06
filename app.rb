@@ -25,7 +25,7 @@ class App
       puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end
   end
-  
+
   def list_people_rentals
     @people.each_with_index do |person, index|
       puts "#{index}) Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
@@ -50,13 +50,6 @@ class App
     puts
   end
 
-  def list_rentals_by_person_id(person_id)
-    puts 'Rentals:'
-    @rentals.each do |rental|
-      puts "Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}" if rental.person.id == person_id
-    end
-  end
-  
   def list_rentals(id)
     puts
     @rentals.each do |rental|
