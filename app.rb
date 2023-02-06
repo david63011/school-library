@@ -45,7 +45,7 @@ class App
   def list_rentals_by_person_id(person_id)
     puts 'Rentals:'
     @rentals.each do |rental|
-      puts "Date: #{rental.date}, Book: \"#{rental.book.title}\" by #{rental.book.author}" if rental.person.id == person_id
+      puts "Date: #{rental.date}, Book: #{rental.book.title} by #{rental.book.author}" if rental.person.id == person_id
     end
   end
 end
