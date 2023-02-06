@@ -1,4 +1,7 @@
+require_relative 'app'
+
 def libbook
+ app= App.new
   puts 'Title:'
   title = gets.chomp
   puts 'Author:'

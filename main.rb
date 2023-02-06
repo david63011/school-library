@@ -14,7 +14,7 @@ def main
       puts 'Thank you for using this app!'
       break
     else
-      choices
+        choice(userinput)
     end
   end
 end

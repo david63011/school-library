@@ -1,4 +1,6 @@
+require_relative 'app'
 def people
+    app = App.new
   print "Enter the person's age: "
   age = gets.chomp.to_i
   print "Enter the person's name (optional): "
