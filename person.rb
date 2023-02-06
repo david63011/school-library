@@ -28,9 +28,3 @@ class Person < Nameable
     @rentals.push(person, date, self)
   end
 end
-
-person1 = Person.new(25, name: 'jex', parent_permission: false)
-puts person1.name
-puts person1.age
-puts person1.id
-puts person1.can_use_services?
