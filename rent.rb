@@ -1,15 +1,21 @@
-require_relative 'app'
+class GetRent
+  def initialize(app)
+    @app = app
+  end
 
-def rent
-    app = App.new
-puts 'Date (YYYY-MM-DD):'
-  date = gets.chomp
-  puts 'ID of the book:'
-  book_id = gets.chomp.to_i
-  book = app.books[book_id - 1] || (puts "Book with ID #{book_id} not found.")
-  puts 'ID of the person:'
-  person_id = gets.chomp.to_i
-  person = app.people[person_id - 1] || (puts "Person with ID #{person_id} not found.")
-  app.create_rental(date, book, person)
-  puts 'Rental created successfully'
+  def rent
+    puts 'Select a book from the following list by number'
+    @app.list_books
+    print 'Book number: '
+    book_number = gets.chomp.to_i
+    puts
+    puts 'Select a person from the following list by number (not ID)'
+    @app.list_people
+    print 'Person number: '
+    person_number = gets.chomp.to_i
+    puts
+    print 'Date: '
+    date = gets.chomp
+    @app.create_rental(date, book_number, person_number)
+  end
 end

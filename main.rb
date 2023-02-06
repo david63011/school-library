@@ -1,22 +1,31 @@
+require_relative 'app'
 require_relative 'option'
-require_relative 'people'
-require_relative 'libbook'
-require_relative 'rent'
-require_relative 'id'
 require_relative 'choices'
 
+class All
+  def initialize
+    @app = App.new
+    @choice = Choice.new(@app)
+    @options = Option.new
+  end
 
-def main
-  loop do
-    options
-    userinput = gets.chomp.to_i
-    if userinput == 7
-      puts 'Thank you for using this app!'
-      break
-    else
-        choice(userinput)
+  def menu
+    loop do
+      @options.options
+      userinput = gets.chomp.to_i
+      if userinput == 7
+        puts 'Thank you for using this app!'
+        break
+      else
+          @choice.choice(userinput)
+      end
     end
   end
+end
+
+def main
+  all = All.new
+  all.menu
 end
 
 main
