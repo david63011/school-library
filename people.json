@@ -1,3 +1,14 @@
 [
-
+  {
+    "class" : "Teacher",
+    "name" : "dffd ewew",
+    "age" : 343,
+    "id" : 470
+  },
+  {
+    "class" : "Student",
+    "name" : "jane",
+    "age" : 23,
+    "id" : 80
+  }
 ]

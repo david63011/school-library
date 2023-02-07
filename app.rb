@@ -4,23 +4,27 @@ require_relative 'book'
 require_relative 'rental'
 require_relative 'person'
 require_relative 'classroom'
+require_relative 'handler'
 
 class App
+  attr_accessor :books, :people
   def initialize
     @books = []
     @people = []
     @rentals = []
   end
 
-  attr_accessor :books, :people
+  include Handler
 
   def list_books
+    read_books
     @books.each_with_index do |book, index|
       puts "#{index}) Title: \"#{book.title}\", Author: #{book.author}"
     end
   end
 
   def list_people
+    read_people
     @people.each do |person|
       puts "[#{person.class}] Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end

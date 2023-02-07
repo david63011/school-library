@@ -59,8 +59,12 @@ module Handler
   end
 
   # Store people
-  def store_people(app)
+  def store_people_to_file(app)
     array = []
+    array1 = read_json(PEOPLE_FILE)
+    array1.each do |person|
+      array.push(person)
+    end
     app.people.each do |person|
       array.push(class: person.class, name: person.name, age: person.age, id: person.id)
     end
@@ -71,12 +75,7 @@ module Handler
   def read_people
     array = read_json(PEOPLE_FILE)
     array.each do |person|
-      case person['class']
-      when 'Student'
-        @people.push(Student.new(person['name'], person['age'], person['id']))
-      when 'Teacher'
-        @people.push(Teacher.new(person['name'], person['age'], person['id']))
-      end
+      puts "[#{person['class']}] Name: #{person['name']}, ID: #{person['id']}, Age: #{person['age']}"
     end
   end
 

@@ -21,7 +21,7 @@ class All
       userinput = gets.chomp.to_i
       if userinput == 7
         store_books(@app)
-        store_people(@app)
+        store_people_to_file(@app)
         store_rentals(@app)
         puts 'Thank you for using this app!'
         break
