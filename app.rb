@@ -31,6 +31,7 @@ class App
   end
 
   def list_people_rentals
+    read_people
     @people.each_with_index do |person, index|
       puts "#{index}) Name: #{person.name}, ID: #{person.id}, Age: #{person.age}"
     end

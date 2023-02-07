@@ -47,14 +47,15 @@ module Handler
     app.books.each do |book|
       array.push(title: book.title, author: book.author)
     end
+    newArr = []
     write_json(array, BOOK_FILE)
   end
 
   # Read Books
   def read_books
     array = read_json(BOOK_FILE)
-    array.each do |book|
-      puts "Title: \"#{book['title']}\", Author: #{book['author']}"
+    array.each_with_index do |book, index|
+      puts "#{index}) Title: \"#{book['title']}\", Author: #{book['author']}"
     end
   end
 
@@ -74,14 +75,18 @@ module Handler
   # Read people
   def read_people
     array = read_json(PEOPLE_FILE)
-    array.each do |person|
-      puts "[#{person['class']}] Name: #{person['name']}, ID: #{person['id']}, Age: #{person['age']}"
+    array.each_with_index do |person, index|
+      puts "#{index}) [#{person['class']}] Name: #{person['name']}, ID: #{person['id']}, Age: #{person['age']}"
     end
   end
 
   # store rentals
   def store_rentals(app)
     array = []
+    array1 = read_json(RENTAL_FILE)
+    array1.each do |rental|
+      array.push(rental)
+    end
     app.rentals.each do |rental|
       array.push(date: rental.date, person: rental.person, book: rental.book)
     end
@@ -92,7 +97,7 @@ module Handler
   def read_rentals
     array = read_json(RENTAL_FILE)
     array.each do |rental|
-      @rentals.push(Rental.new(rental['date'], rental['person'], rental['book']))
+      puts "Date: #{rental['date']}, Book \"#{rental.book['title']}\" by #{rental.book['author']}"
     end
   end
 end
