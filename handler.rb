@@ -12,6 +12,7 @@ module Handler
       indent: '  ',
       space_before: ' ',
       space: ' '
+
     }
     File.write(file_path, JSON.generate(array, opts))
   end
