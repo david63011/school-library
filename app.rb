@@ -73,5 +73,4 @@ class App
     puts 'Person created successfully'
     puts
   end
-
 end
