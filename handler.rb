@@ -12,7 +12,6 @@ module Handler
       indent: '  ',
       space_before: ' ',
       space: ' '
-
     }
     File.write(file_path, JSON.generate(array, opts))
   end
@@ -47,7 +46,6 @@ module Handler
     app.books.each do |book|
       array.push(title: book.title, author: book.author)
     end
-    newArr = []
     write_json(array, BOOK_FILE)
   end
 

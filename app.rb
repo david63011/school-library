@@ -8,6 +8,7 @@ require_relative 'handler'
 
 class App
   attr_accessor :books, :people
+
   def initialize
     @books = []
     @people = []
