@@ -20,7 +20,7 @@ class App
   def list_books
     read_books
     @books.each_with_index do |book, index|
-      puts "#{index}) Title: \"#{book.title}\", Author: #{book.author}"
+      puts "Title: \"#{book.title}\", Author: #{book.author}"
     end
   end
 
