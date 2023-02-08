@@ -29,7 +29,7 @@ module Handler
   def check_rental_file
     File.write(RENTAL_FILE, '{}') unless File.exist?(RENTAL_FILE)
   end
-  
+
   def check_rental_file2
     File.write(RENTAL_FILE2, '{}') unless File.exist?(RENTAL_FILE2)
   end
@@ -88,7 +88,7 @@ module Handler
       end
     end
   end
-  
+
   def read_people_rentals(people)
     array = read_json(PEOPLE_FILE)
     array.each do |person|

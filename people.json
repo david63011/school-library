@@ -28,5 +28,11 @@
     "name" : "yaiosns jsujs",
     "age" : 45,
     "id" : 833
+  },
+  {
+    "class" : "Student",
+    "name" : "david",
+    "age" : 16,
+    "id" : 925
   }
 ]

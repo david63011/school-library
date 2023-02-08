@@ -34,7 +34,7 @@ class App
     end
     puts
   end
-  
+
   def list_books_rent
     puts
     if @books.empty?
@@ -77,8 +77,8 @@ class App
 
   def create_rental(date, personid, bookid)
     puts
-    str1 = {"date": date, "person": {"name": @people[personid].name, "id": @people[personid].id, "age": @people[personid].age}, 
-            "book":{"title": @books[bookid].title, "author": @books[bookid].author}}
+    str1 = { date: date, person: { name: @people[personid].name, id: @people[personid].id, age: @people[personid].age },
+             book: { title: @books[bookid].title, author: @books[bookid].author } }
     array = []
     array.push(str1)
     write_json(array, RENTAL_FILE2)
@@ -95,12 +95,14 @@ class App
   def list_rentals(id)
     puts
     @rentals.each do |rental|
-      puts "Date: #{rental['date']}, Book: \"#{rental['book']['title']}\" By: #{rental['book']['author']}" if rental['person']['id'] == id
+      if rental['person']['id'] == id
+        puts "Date: #{rental['date']}, Book: \"#{rental['book']['title']}\" By: #{rental['book']['author']}"
+      end
     end
     puts
   end
 
-  def create_student(classroom,id, age, name, parent_permission)
+  def create_student(classroom, id, age, name, parent_permission)
     student = Student.new(classroom, id, age, name: name, parent_permission: parent_permission)
     puts
     @people.push(student)
