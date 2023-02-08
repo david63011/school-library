@@ -1,5 +1,4 @@
 require_relative 'spec_helper'
-include LinksHelper
 
 describe Classroom do
   classroom = Classroom.new('104')

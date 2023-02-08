@@ -1,5 +1,4 @@
 require_relative 'spec_helper'
-include LinksHelper
 
 describe Teacher do
   teacher = Teacher.new(28, 28, 'History', name: 'pame')

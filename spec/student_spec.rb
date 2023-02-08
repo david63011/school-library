@@ -1,5 +1,4 @@
 require_relative 'spec_helper'
-include LinksHelper
 
 describe Student do
   student = Student.new('C', 30, 30, name: 'David')

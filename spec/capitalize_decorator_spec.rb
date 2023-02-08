@@ -1,5 +1,4 @@
 require_relative 'spec_helper'
-include LinksHelper
 
 describe CapitalizeDecorator do
   capitalize_decorator = CapitalizeDecorator.new('pame')

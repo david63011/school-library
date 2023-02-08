@@ -1,5 +1,4 @@
 require_relative 'spec_helper'
-include LinksHelper
 
 describe Person do
   person = Person.new(25, 25, name: 'jex')

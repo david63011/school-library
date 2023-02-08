@@ -1,6 +1,5 @@
 require_relative 'spec_helper'
 require 'vine'
-include LinksHelper
 
 class Rentals
   attr_accessor :date, :person, :book
