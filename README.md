@@ -28,7 +28,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 -vet-clinic-database <a name="about-project"></a>
+# 📖 -OOP Library <a name="about-project"></a>
 
 **This is an App which allow you to add new students or teachers**
 
