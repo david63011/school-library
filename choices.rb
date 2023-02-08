@@ -3,6 +3,7 @@ require_relative 'libbook'
 require_relative 'rent'
 require_relative 'id'
 require_relative 'people'
+require_relative 'handler'
 
 class Choice
   def initialize(app)
@@ -12,6 +13,8 @@ class Choice
     @people = People.new(@app)
     @list_rentals = ListRentals.new(@app)
   end
+
+  include Handler
 
   def choice(uii)
     case uii

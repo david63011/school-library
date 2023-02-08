@@ -5,7 +5,7 @@ class GetRent
 
   def rent
     puts 'Select a book from the following list by number'
-    @app.list_books
+    @app.list_books_rent
     print 'Book number: '
     book_number = gets.chomp.to_i
     puts

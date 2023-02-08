@@ -16,13 +16,16 @@ class All
     check_book_file
     check_people_file
     check_rental_file
+    check_rental_file2
+    read_books(@app)
+    read_people(@app)
+    @app.read_rentals
     loop do
       @options.options
       userinput = gets.chomp.to_i
       if userinput == 7
         store_books(@app)
         store_people_to_file(@app)
-        store_rentals(@app)
         puts 'Thank you for using this app!'
         break
       else

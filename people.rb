@@ -12,7 +12,8 @@ class People
     parent_permission = gets.chomp.downcase == 'y'
     print 'Classroom: '
     classroom = gets.chomp
-    @app.create_student(classroom, age, name, parent_permission)
+    id = nil
+    @app.create_student(classroom, id, age, name, parent_permission)
   end
 
   def regteacher
@@ -22,7 +23,8 @@ class People
     name = gets.chomp
     print 'Specialization: '
     specialization = gets.chomp
-    @app.create_teacher(age, name, specialization)
+    id = nil
+    @app.create_teacher(id, age, name, specialization)
   end
 
   def people
