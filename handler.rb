@@ -38,7 +38,7 @@ module Handler
     return unless File.exist?(file_path)
 
     file = File.read(file_path)
-    JSON.parse(file) if file
+    JSON.parse(file)
   end
 
   # Store Books

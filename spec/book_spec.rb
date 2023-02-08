@@ -1,4 +1,5 @@
-require 'spec_helper'
+require_relative 'spec_helper'
+include LinksHelper
 
 describe Book do
   book = Book.new('The Alchemist', 'Paulo Coelho')

@@ -1,8 +1,8 @@
-require_relative './spec_helper'
+require_relative 'spec_helper'
+include LinksHelper
 
 describe Teacher do
-  teacher = Teacher.new(28, name: 'pame')
-
+  teacher = Teacher.new(28, 28, 'History', name: 'pame')
 
   it 'should have a name' do
     expect(teacher.name).to eql('pame')

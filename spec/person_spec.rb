@@ -1,7 +1,8 @@
-require './spec_helper'
+require_relative 'spec_helper'
+include LinksHelper
 
 describe Person do
-  person = Person.new(25, name: 'jex')
+  person = Person.new(25, 25, name: 'jex')
   it 'should be an instance of Person' do
     expect(person).to be_an_instance_of(Person)
   end
