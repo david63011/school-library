@@ -18,4 +18,7 @@ describe Student do
   it 'shoild have a method play_hooky' do
     expect(student).to respond_to(:play_hooky)
   end
+  it 'should have a classroom method' do
+    expect(student).to respond_to(:classroom)
+  end
 end
