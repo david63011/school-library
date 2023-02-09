@@ -1,12 +1,4 @@
-# clinics
-
-## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
+# OOP School
 
 <a name="readme-top"></a>
 
@@ -36,7 +28,7 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 -vet-clinic-database <a name="about-project"></a>
+# 📖 -OOP Library <a name="about-project"></a>
 
 **This is an App which allow you to add new students or teachers**
 
@@ -90,13 +82,13 @@ sudo apt-get install postgresql postgresql-contrib
 Clone this repository to your desired folder:
 
 cd my-folder
-git clone git@github.com:David63011/vet-clinic-database.git
+git clone github.com/david63011/school-library.git
 
 ### Install
 
 Install this project with:
 
-cd vet-clinic-database
+cd oop
 
 ### Usage
 
@@ -131,7 +123,7 @@ not available
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] **More data of the animals**
+- [ ] **Add more classes**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

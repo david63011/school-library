@@ -1,0 +1,38 @@
+[
+  {
+    "class" : "Teacher",
+    "name" : "Martin Backson",
+    "age" : 58,
+    "id" : 7
+  },
+  {
+    "class" : "Student",
+    "name" : "Jane Burton",
+    "age" : 41,
+    "id" : 9
+  },
+  {
+    "class" : "Student",
+    "name" : "dfdf",
+    "age" : 32,
+    "id" : 759
+  },
+  {
+    "class" : "Teacher",
+    "name" : "fdf",
+    "age" : 454,
+    "id" : 878
+  },
+  {
+    "class" : "Student",
+    "name" : "yaiosns jsujs",
+    "age" : 45,
+    "id" : 833
+  },
+  {
+    "class" : "Student",
+    "name" : "david",
+    "age" : 16,
+    "id" : 925
+  }
+]
