@@ -13,4 +13,7 @@ describe Teacher do
   it 'should have a specialization in History' do
     expect(teacher.specialization).to eql('History')
   end
+  it 'should have a method to check if the teacher can use the services' do
+    expect(teacher).to respond_to(:can_use_services?)
+  end
 end

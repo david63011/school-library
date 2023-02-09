@@ -8,4 +8,7 @@ describe Classroom do
   it 'should have a label' do
     expect(classroom.label).to eql('104')
   end
+  it 'should have an add student method' do
+    expect(classroom).to respond_to(:add_student)
+  end
 end
